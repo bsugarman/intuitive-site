@@ -35,7 +35,7 @@ server <- function(input, output, session) {
     # Added by Ashok BALARAMAN on 2018-08-23
     # Read the stored DataFrame created by XML to DataFrame process
     
-    EndNoteDF <- readRDS("/home/INTSURG/bsugarman/clinicalaffairs/dVSearch/EndNoteFull.rds")
+    EndNoteDF <- readRDS("EndNoteFull.rds")
     
     # Convert Factors as Characters
     EndNoteDF <- data.frame(lapply(EndNoteDF, as.character), stringsAsFactors=FALSE)
@@ -76,7 +76,7 @@ server <- function(input, output, session) {
     # #      WORKS BUT IS VERY SLOW  
     # 
     
-    file <-"/home/INTSURG/bsugarman/clinicalaffairs/dVSearch/www/output.txt"
+    file <-"www/output.txt"
     
     Citations <- scan(file, character(), quote = "")
     
