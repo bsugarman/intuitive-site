@@ -1,0 +1,266 @@
+
+.dataTables_filter input{
+    display: none
+    font-weight: 100;
+    border-radius: 5px;
+    border-width: thin;
+    width: 100px;
+    height: 28px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+.dataTables_filter input:focus {
+     width: 300px;
+ 
+}
+
+.dataTables_scrollHeadInner th [aria-label="Expanded: activate to sort column ascending"] {
+	color: white !important;
+}
+
+
+.dataTables_filter { display: none;   flex-wrap: wrap;
+}
+.dataTables_filter input {order: 2;  flex: 0 0 100%;
+}
+
+
+.dataTables_filter label {order: 1;  flex: 0 0 100%;
+ }
+
+
+
+.introjs-tooltiptext{
+font-size: 16px;
+}
+
+h2 {	
+	font-size: 190%;
+	text-align: left;
+	font-weight: 100;
+	font-family: 'Montserrat', sans-serif;
+
+	text-transform: uppercase;
+	padding-bottom: 20px;
+
+
+}
+
+.dataTable tr{ background-color:  white;
+
+}
+
+.dataTable tr:nth-child { background-color: white; 
+
+}
+
+.dataTables_scrollBody td {
+
+font-size: 16px;
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+
+.dataTables_scrollHead{
+
+line-height: 30px;
+
+}
+
+.nav.nav-tabs.shiny-tab-input.shiny-bound-input{
+font-size: 17px;
+font-weight: bold;
+}
+
+.dataTables_scrollHead th{
+
+text-align: left !important;
+
+}
+
+
+td {
+	background-color: white;
+	font-size: 15px;
+ text-shadow:0 0 1px transparent;
+line-height: 30px;
+
+}
+
+tr {
+	background-color:  white;
+	font-size: 15px;
+	 text-shadow:0 0 1px transparent;
+}
+
+*{
+	color: #000080;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+}
+
+
+.form-group.shiny-input-container{
+	width: 100%;
+	padding-top: 10%;
+	font-size: 200%;
+	font-weight: 100;
+	height: 680px;
+	background-image: url("davincirobot1.png");
+	background-size: 100%;
+	align-items: center;
+	}
+
+.form-group.shiny-input-container input{
+	-webkit-transition: width 0.4s ease-in-out;
+   	transition: width 0.4s ease-in-out;
+	width: 20%;
+	text-align: center;
+	height: 50px;
+	font-size: 16pt;
+}
+
+.form-group.shiny-input-container input:focus {
+   	width: 30%;
+}
+
+
+.dataTable thead {
+	font-weight: 100;
+}
+.dataTables_scrollHead{
+ 	font-weight: 100;
+}
+
+.form-group.shiny-input-container label {
+	font-weight: 100;
+	padding-bottom: 30px;
+	width: 50%;
+	font-size: 150%;
+  }
+
+#btn {
+	visibility: hidden;
+}
+
+.dt-button.buttons-pdf.buttons-html5,
+.dt-button.buttons-excel.buttons-html5,
+.dt-button.buttons-copy.buttons-html5,
+.dt-button.buttons-print,
+.dt-button buttons-print,
+.dt-button.buttons-print:focus,
+.dt-button.buttons-collection.buttons-colvis,
+.dt-button.buttons-columnVisibility.active,
+.dt-button.buttons-columnVisibility,
+.dt-button.buttons-collection.buttons-page-length,
+.dt-button.buttons-collection,
+.dt-button.button-page-length
+{
+	background: none;
+	background-image: none;
+
+	color: #D3D3D3; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+
+.dt-button.buttons-pdf.buttons-html5:hover,
+.dt-button.buttons-collection.buttons-colvis:hover,
+.dt-button.buttons-excel.buttons-html5:hover,
+.dt-button.buttons-copy.buttons-html5:hover,
+.dt-button.buttons-print:hover,
+.dt-button.buttons-columnVisibility.active:hover,
+.dt-button.buttons-columnVisibility:hover,
+.dt-button.buttons-collection.buttons-page-length:hover,
+.dt-button.button-page-length:hover,
+dt-button.buttons-collection:hover,
+ {
+	background-image: none;
+
+text-align: center;
+background-color: lightgray;
+
+	}
+
+.dt-button-collection{
+	width: 190px  !important;
+	text-align: center;
+
+}
+
+
+.dropup {
+	display: inline-flex;
+}
+ #favbutton {
+	display: inline-flex;
+
+ }
+ #clear {
+	display: inline-flex;
+
+ }
+
+#defs {
+width: 100%;
+}
+
+#helpButton{
+width: 100%;
+
+}
+.dropdown{
+display: inline-block;
+}
+#askus{
+width: 100%;
+
+}
+
+
+.dt-buttons{
+
+font-size: 16.2px;
+display: none;
+
+}
+
+
+.btn.btn-default.action-button.shiny-bound-input {
+font-size: 15px;
+	color: #000080;
+font-weight: 500;
+
+
+}
+
+[data-type="disabled"] .form-group.has-feedback{
+visibility: hidden;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.form-group.shiny-input-container label {
+ 	width: 1000px;
+font-size: 130%;
+}
+
+#wrapping {
+	width: 80%;
+}
+
+h2{
+	background-image: url("davincirobot1.png") 100%;
+}
+
+.dataTables_scrollBody.odd.selected{
+background-color: coral !important;
+}
+.dataTables_scrollBody.even.selected{
+background-color: coral !important;
+}
+

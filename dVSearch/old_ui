@@ -1,0 +1,68 @@
+jscode <- "$(function() {
+  var $els = $('[data-proxy-click]');
+  $.each(
+    $els,
+    function(idx, el) {
+      var $el = $(el);
+      var $proxy = $('#' + $el.data('proxyClick'));
+      $el.keydown(function (e) {
+        if ((e.keyCode || e.which) == 13) {
+          $proxy.click();
+        }
+      });
+    }
+  );
+});"
+
+ui <- fluidPage(
+
+  tags$head(
+    tags$link(
+      type = "text/css",
+      rel="stylesheet",
+      href = "tester1.css"), 
+	tags$script(HTML(jscode)), 
+
+	tags$link(
+      type = "text/css",
+      rel="stylesheet",
+      href ="https://fonts.googleapis.com/css?family=Montserrat"),
+    
+    tags$link(
+      type = "text/css",
+      rel="stylesheet",
+      href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow"),
+	tags$script(src = "matomo.js")
+),
+  
+  img(src='logo.png', align = "right", width = "150px", height = "60px"),
+  useShinyjs(),
+    titlePanel("C.E. Search"),
+  tabsetPanel(
+    id = "inTabset", type = "tabs",
+    tabPanel(
+      "Home", shiny::textInput("distinct_id", label = "Welcome to the Clinical Evidence Search", value = "", width = NULL, placeholder = "Search for..."), `data-proxy-click` = "btn",
+      align = "center",
+      actionButton("btn", icon("search"))
+      
+    ),
+    tabPanel(
+      "Search", value = "tag",
+      withSpinner(DT::dataTableOutput("tbl", width = '100%')),
+      actionButton("helpButton", "User Guide", onclick = "window.open('DVLibUserManual.pdf')"),
+      actionButton("defs", "Definitions", onclick = "window.open('defs.pdf')"),
+	actionButton("steps", "Help"),
+      actionButton("favButton", "Add to Favorites", onclick = "print(hey)"),
+      actionButton("clear", "Clear Selected Rows"),
+      actionButton("selectAll", "Select All")
+
+    ),
+    tabPanel(
+      "Favorites",
+      withSpinner(DT::dataTableOutput("favorites", width = "100%")),
+      actionButton("delete", "Delete Selected Rows"),
+      actionButton("selectAllFav", "Select All")
+
+    )
+  )
+)

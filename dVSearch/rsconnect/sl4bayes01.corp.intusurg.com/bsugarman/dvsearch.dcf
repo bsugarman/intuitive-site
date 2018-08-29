@@ -1,0 +1,13 @@
+name: dvsearch
+title: dVSearch
+username: bsugarman
+account: bsugarman
+server: sl4bayes01.corp.intusurg.com
+hostUrl: https://sl4bayes01.corp.intusurg.com:3939/__api__
+appId: 3
+bundleId: 10
+url: https://sl4bayes01.corp.intusurg.com:3939/content/3/
+when: 1534373998.67603
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .httr-oauth|.httr-oauth-SUSPENDED|.RData|old_server|old_ui|server.R.Old|ui.R.Old

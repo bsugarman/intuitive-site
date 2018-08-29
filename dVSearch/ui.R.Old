@@ -1,0 +1,25 @@
+library(shiny)
+library(shinyjs)
+library(DBI)
+library(data.table)
+library(odbc)
+library(DT)
+library(leaflet)
+
+ui <- fluidPage(
+ h1("DV-Lib", align = "center", style = "color: lightblue, weight: light"),
+  
+  tabsetPanel(
+    type = "tabs",
+    tabPanel(
+      "Table",
+      DT::dataTableOutput("tbl", width = '100%'),
+      actionButton("favButton", "Add to Favorites")
+    ),
+    #  tabPanel("Map", leafletOutput("mymap",width="100%",height="600px")),
+    tabPanel(
+      "Favorites",
+      DT::dataTableOutput("favorites", width = "100%", height = "600px"), align = "center"
+    )
+  )
+)
